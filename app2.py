@@ -3,7 +3,7 @@ import pandas as pd
 
 def main():
     st.title(' Cloud - Résultats metrics view')
-    df = pd.readcsv('data.csv')
+    df = pd.readcsv('data2.csv')
     st.write("Accurancy per epoch")
     st.linechart(data=df, x='epoch', y='accuracy')
     st.write("Mean Iou per epoch")
